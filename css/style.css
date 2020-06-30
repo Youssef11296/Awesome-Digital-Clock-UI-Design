@@ -1,0 +1,90 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Open Sans', sans-serif;
+    box-sizing:border-box;
+}
+body{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    background-color:#091921;
+    overflow:hidden;
+}
+h1{
+    margin-bottom:.8rem;
+    color:#fff;
+    font-size:2rem;
+    font-weight:800;
+    text-transform:uppercase;
+    letter-spacing:6px;
+}
+.clock{
+    display:flex;
+}
+.clock > div{
+    width:200px;
+    height:200px;
+    margin:0 .2rem;
+    padding-top:1.4rem;
+    color:#fff;
+    text-transform:uppercase;
+    background-color:#2196f3;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+    font-size:4rem;
+    -webkit-box-reflect:below 1px linear-gradient(transparent, #0004);
+    /* Note : The Box-Reflect Effcet Can Be Obvious In Microsoft Edge Browser */
+}
+.clock > div span:nth-child(2){
+    display:block;
+    width:100%;
+    padding:.8rem 0;
+    font-size:1.8rem;
+    text-align:center;
+    letter-spacing:2px;
+    background-color:#127fd6;
+    border-top:1px solid rgba(0,0,0.2);
+}
+.clock > div:nth-child(3){
+    background-color:#ff006a;
+}
+.clock > div:nth-child(3) span:nth-child(2){
+    background-color:#ec0062;;
+}
+.clock > div:last-child{
+    width:68px;
+    height:68px;
+    margin-top:132px;
+    padding-top:.8rem;
+    font-size:2rem;
+    background-color:#fff;
+    color:#333;
+}
+@media screen and (max-width:680px){
+    h1{
+        font-size:.8rem;
+    }
+    .clock > div{
+        width:120px;
+        height:120px;
+        padding-top:2rem;
+        font-size:1.2rem;
+    }
+    .clock > div span:nth-child(2){
+        font-size:.8rem;
+    }
+    .clock > div:last-child{
+        width:40px;
+        height:40px;
+        margin-top:80px;
+        padding-top:.5rem;
+        font-size:1.2rem;
+    }
+}
